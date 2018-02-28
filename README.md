@@ -1,5 +1,5 @@
 
-# hFE-tester
+# hh<sub>FE</sub>-tester
 
 A Microprocessor Transistor h<sub>FE</sub> tester to display the h<sub>FE</sub> value of NPN transistors.
 
