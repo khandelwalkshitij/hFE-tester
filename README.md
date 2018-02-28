@@ -61,9 +61,7 @@ Ending address: 01FFFH
 
 The code resides in the ROM and begins at address 00000H. The address that is loaded as soon as the system is switched on is FFFF0H.
 
-### IO Organization
-
-|8255(1)|||
+### IO Organization for 8255(1)
 |--|--|--|
 |PORT A| 00h |O/P|
 |PORT B| 02h |O/P|
@@ -71,9 +69,7 @@ The code resides in the ROM and begins at address 00000H. The address that is lo
 |PORT C UPPER| 04h |I/P|
 |CREG |06h| |
 
-### IO Organization
-
-|8255(2)|||
+### IO Organization for 8255(2)
 |--|--|--|
 |PORT A| 10h |O/P|
 |PORT B| 12h |O/P|
