@@ -42,3 +42,36 @@ One of the ends of each resistor is connected to a DI device through a relay cir
 |2K x 8bit - SRAM| 2 |Memory|
 |4K x 8bit - ROM| 2 |Memory|
 |NOT Gates| 13 |Inverting Logic|
+
+## MEMORY ORGANIZATION
+
+The 8086 based system uses two SRAM chips and two ROM chips. Both SRAM and ROM are organized into even and odd banks to facilitate both byte size and word size data transfer. The hfe_tester.DSN file shows the circuit for the same.
+
+#### STATIC RANDOM ACCESS MEMORY – SRAM
+
+Starting address: 08000H
+Ending address: 08FFFH
+
+#### READ ONLY MEMORY – ROM
+Starting address: 00000H
+Ending address: 01FFFH
+
+The code resides in the ROM and begins at address 00000H. The address that is loaded as soon as the system is switched on is FFFF0H.
+
+### IO Organization
+
+8255 [1]
+|PORT A| 00h |O/P|
+|PORT B| 02h |O/P|
+|PORT C LOWER| 04h |O/P|
+|PORT C UPPER| 04h |I/P|
+|CREG |06h| |
+
+### IO Organization
+
+8255 [2]
+PORT A 10h O/P
+PORT B 12h I/P
+PORT C LOWER 14h O/P
+PORT C UPPER 14h I/P
+CREG 16h
