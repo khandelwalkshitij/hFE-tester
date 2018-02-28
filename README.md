@@ -70,9 +70,10 @@ The code resides in the ROM and begins at address 00000H. The address that is lo
 
 ### IO Organization
 
-8255 [2]
-PORT A 10h O/P
-PORT B 12h I/P
-PORT C LOWER 14h O/P
-PORT C UPPER 14h I/P
-CREG 16h
+|8255(2)|||
+|--|--|--|
+|PORT A| 10h |O/P|
+|PORT B| 12h |O/P|
+|PORT C LOWER| 14h |O/P|
+|PORT C UPPER| 14h |I/P|
+|CREG |16h| |
