@@ -53,6 +53,7 @@ Starting address: 08000H
 Ending address: 08FFFH
 
 #### READ ONLY MEMORY – ROM
+
 Starting address: 00000H
 Ending address: 01FFFH
 
