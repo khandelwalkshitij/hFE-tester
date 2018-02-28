@@ -60,7 +60,8 @@ The code resides in the ROM and begins at address 00000H. The address that is lo
 
 ### IO Organization
 
-8255 [1]
+|8255 [1]|
+|--|--|--|
 |PORT A| 00h |O/P|
 |PORT B| 02h |O/P|
 |PORT C LOWER| 04h |O/P|
