@@ -78,3 +78,25 @@ The code resides in the ROM and begins at address 00000H. The address that is lo
 |PORT C LOWER| 14h |O/P|
 |PORT C UPPER| 14h |I/P|
 |CREG |16h| |
+
+## CONTROL WORDS
+
+#### Control Word for 8255 (1)
+10001000
+Used in i/o mode
+● Mode for port A = simple i/o (i.e. 00)
+● Port A is used for generating control signal of LCD
+● Port B is used for giving input to the LCD
+● Mode for group B = simple i/o (i.e. 0)
+● PC0 – PC3 used as output to the keypad (columns)
+● PC4 – PC7 used as input from the keypad (rows)
+
+#### Control Word for 8255 (2)
+10001010
+Used in i/o mode
+● Mode for port A = simple i/o (i.e. 00)
+● Port A is used for giving input to DI device
+● Port B is used for taking input from ADC
+● Mode for group B = simple i/o (i.e. 0)
+● PC0 – PC3 used as output (PC2 is used for controlling the alarm)
+● PC4 – PC7 used as input ( PC5 – INTR of ADC)
