@@ -25,3 +25,20 @@ Depending upon the input current and the h<sub>FE</sub> value of the transistor,
 The h<sub>FE</sub> value is then displayed on the LCD. If it is less than 50, the alarm is activated for 2 seconds. The DI device is connected to a resistor circuit as shown on the drawing sheet. There are 7 resistors of resistances 9.8KΩ, 4 resistors of 25Ω and 2 resistors of 50Ω respectively connected in series to a +5V source.
 
 One of the ends of each resistor is connected to a DI device through a relay circuit switch. Each of these switches are connected to the 8086 microprocessor through an 8255. When a switch is closed (i.e., when a logic 1 is placed at one of the terminals of the coil) the voltage at that end of the resistor (to which the switch is connected) is provided to the DI device. The DI device used is a VCCS (Voltage controlled current source) that converts the given voltage to the specified current with the given transconductance of 100 microΩ.
+
+## COMPONENT DETAILS
+
+| COMPONENT  | QUANTITY | DESCRIPTION |
+| ------------- | ------------- | -------------- |
+| Intel 8086  | 1  | Microprocessor |
+| 82C55  | 2  | Programmable Peripheral Interface |
+| ADC 0804 | 1 | A to D Converter |
+|74LS244| 1 |4-bit Buffer|
+|74LS373| 4 |8-bit Latch|
+|74LS245| 4 |8-bit Buffer|
+|2N2369| 1 |NPN Transistor|
+|LM020L| 1 |LCD Display|
+|ACS755XCB-130| 1 |Voltage Sensor|
+|2K x 8bit - SRAM| 2 |Memory|
+|4K x 8bit - ROM| 2 |Memory|
+|NOT Gates| 13 |Inverting Logic|
