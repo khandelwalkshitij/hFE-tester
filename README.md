@@ -50,11 +50,13 @@ The 8086 based system uses two SRAM chips and two ROM chips. Both SRAM and ROM a
 #### STATIC RANDOM ACCESS MEMORY – SRAM
 
 Starting address: 08000H
+
 Ending address: 08FFFH
 
 #### READ ONLY MEMORY – ROM
 
 Starting address: 00000H
+
 Ending address: 01FFFH
 
 The code resides in the ROM and begins at address 00000H. The address that is loaded as soon as the system is switched on is FFFF0H.
